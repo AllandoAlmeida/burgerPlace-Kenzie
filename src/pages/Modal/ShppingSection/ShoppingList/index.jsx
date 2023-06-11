@@ -22,7 +22,7 @@ export const ShoppingList = ({ purchaseList, setPurchaseList, handleShowToast}) 
 
 
   return (
-    <StyledModalList>
+    <StyledModalList cardCount={purchaseList.length}>
       {purchaseList.map((purchase) => (
         <ShoppingCart key={purchase.id} purchase={purchase} handleRemove={handleRemove} handleShowToast={handleShowToast} />
       ))}
