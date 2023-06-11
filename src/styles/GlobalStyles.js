@@ -11,6 +11,8 @@ export default createGlobalStyle`
 	--color-warning: #ffcd07;
 	--color-sucess: #168821;
   --color-white:#FFFFFF;
+  --color-img: #F5F5F5;
+  --color-button:#BDBDBD;
 
 	--color-information: #155bcb;
     font-size: 62.5%;

@@ -24,12 +24,12 @@ export const BurgerCard = ({ burger, setPurchaseList, purchaseList }) => {
       <StyledLi className="contanierImage">
         <img src={burger.img} alt="" />
       </StyledLi>
-      <StyledLi className="title">
-        <figcaption>{burger.name}</figcaption>
-      </StyledLi>
+      <ul className="contanierContent">
+      <StyledLi className="title">{burger.name}</StyledLi>
       <StyledLi className="category">{burger.category}</StyledLi>
       <StyledLi className="price">{formattedValue}</StyledLi>
       <ButtonAddCar shoppingList={shoppingList} />
+      </ul>
     </StylesCard>
   );
 };

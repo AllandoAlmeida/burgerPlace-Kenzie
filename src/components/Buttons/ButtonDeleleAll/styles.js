@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyleButtonDeleteAll = styled.button`
 display: flex;
-margin: 18px 23px 20px;
+margin: 18px 5% 20px;
 justify-content: center;
 align-items: center;
 background-color: var(--color-grey-100);

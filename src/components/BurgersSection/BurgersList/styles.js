@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
-export const ContainerList = styled.ul`
+export const ContainerList = styled.div`
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-between;
+gap: 4%;
 width: 100%;
-max-width: 85%;
-margin: 32px auto 83px;
-border: 1px solid red;
-
-
-
-
+max-width: 83%;
+margin: 32px auto 15px;
 `

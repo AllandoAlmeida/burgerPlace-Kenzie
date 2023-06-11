@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { StyledHeader } from "./styles";
+import { StyledDivImage, StyledDivInput, StyledHeader } from "./styles";
 import { ButtonCountItens } from './../Buttons/ButtonCountItens';
+import logoKenzie from './../../assets/logoKenzie.svg'
+import { ButtonSearch } from "../Buttons/ButtonSearch";
 
-export const Header = ({ callback, setModalOpen, setPurchaseList, purchaseList}) => {
+
+export const Header = ({ callback, setModalOpen, setPurchaseList, purchaseList }) => {
   const [inputSearch, setInputSearch] = useState('');
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -10,11 +13,23 @@ export const Header = ({ callback, setModalOpen, setPurchaseList, purchaseList})
   }
   return (
     <StyledHeader>
-      <ButtonCountItens setModalOpen={setModalOpen} purchaseList={purchaseList} />
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Buscar..." onChange={(event) => setInputSearch(event.target.value)} />
-        <button type="submit">Buscar</button>
-      </form>
+     
+      <StyledDivImage>
+        <img src={logoKenzie} alt="" />
+        <ButtonCountItens setModalOpen={setModalOpen} purchaseList={purchaseList} />
+      </StyledDivImage>
+
+      <StyledDivInput>
+        <form onSubmit={handleSubmit}>
+          <p>
+            <input type="text" placeholder="Digitar Pesquisa" onChange={(event) => setInputSearch(event.target.value)} />
+            <ButtonSearch />
+          </p>
+        </form>
+      </StyledDivInput>
+
+     
     </StyledHeader>
+
   );
 };

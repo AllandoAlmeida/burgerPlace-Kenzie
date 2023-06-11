@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ModalSection = styled.section`
   position: fixed;
-  width: 100%;
+  width: 95%;
   max-width: 500px;
   height: max-content;
   min-height: 400px;
@@ -12,14 +12,14 @@ export const ModalSection = styled.section`
   background-color: var(--color-white);
   border: 1px solid #F5F5F5;
   border-radius: 5px;
-  margin: 0 10%;
+  margin: 0 1%;
 
   header {
     width: 100%;
     max-width: 500px;
     background-color: var(--color-color-primary);
     color: var(--color-white);
-    padding: 0 20px;
+    padding: 0 1%;
 
     div {
       display: flex;
