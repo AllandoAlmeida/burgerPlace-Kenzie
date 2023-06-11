@@ -14,11 +14,11 @@ export const BurgerCard = ({ burger, setPurchaseList, purchaseList }) => {
     let text = '';
 
     if (itemExists) {
-      colorClass = '#e60000'; 
+      colorClass = '#e60000'; // Defina a cor de erro
       text = 'O produto já foi adicionado ao carrinho.';
     } else {
       setPurchaseList([...purchaseList, burger]);
-      colorClass = '#168821';
+      colorClass = '#168821'; // Defina a cor de sucesso
       text = 'Produto adicionado com sucesso!';
     }
 

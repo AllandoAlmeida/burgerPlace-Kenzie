@@ -10,7 +10,7 @@ export const ModalSection = styled.section`
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--color-white);
-  border: 1px solid #F5F5F5;
+  border: 1px solid var(--color-grey-100);
   border-radius: 5px;
   margin: 0 1%;
 
@@ -19,7 +19,7 @@ export const ModalSection = styled.section`
     max-width: 500px;
     background-color: var(--color-color-primary);
     color: var(--color-white);
-    padding: 0 1%;
+    padding: 0 2%;
 
     div {
       display: flex;

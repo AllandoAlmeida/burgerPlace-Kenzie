@@ -1,11 +1,10 @@
-import { StyledButtonSearch } from "./styles";
-import { BsSearch } from 'react-icons/bs';
+import { StyledSearchIcon, StyledButtonSearch } from "./styles";
 
 export const ButtonSearch = () => {
-    return(
-        <button id="lupa" type="submit">
-            <BsSearch/>
-        </button>
+    return (
+        <StyledButtonSearch type="submit">
+            <StyledSearchIcon />
+        </StyledButtonSearch>
     )
 }
 

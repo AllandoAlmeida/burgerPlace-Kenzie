@@ -1,27 +1,22 @@
 import styled from "styled-components";
+import { BsSearch } from "react-icons/bs";
 
 export const StyledButtonSearch = styled.button`
-button{
-  
-}
-#lupa{
-    float:left;
-    margin:3px 0px 0px -20px;
-    cursor:pointer;
-    background-color: var(--color-color-primary);
-    
- }
- 
- 
- #lupa:after{
-    font-family:FontAwesome;
-    font-size:14px;
-    content:"\f002"
- }
-   form{
-     display: flex;
-     width: 100%;
-     justify-content: flex-end;
-   }
+width: 5.3rem;
+height: 4rem;
+background-color: var(--color-color-primary);
+border: 0.2rem solid var(--color-color-primary);
+border-radius: 08rem;
 
    `
+export const StyledSearchIcon = styled(BsSearch)`
+width: 1.3rem;
+height: 1.6rem;
+
+font-family: 'Font Awesome 5 Free';
+font-style: normal;
+font-weight: 900;
+font-size: 1.4rem;
+line-height: 1.6rem;
+color: var(--color-white)
+`;

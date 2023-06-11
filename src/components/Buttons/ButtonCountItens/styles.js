@@ -5,12 +5,16 @@ export const ButtonWrapper = styled.div`
   position: relative;
   display: inline-block;
 
+  button{
+    border: none;
+  }
+
 `;
 
 export const StyledCartIcon = styled(BsCart3)`
   
   background-color: var(--color-white);
-  font-size: 24px;
+  font-size: 2.4rem;
   border: var(--color-white);
 `;
 
@@ -20,10 +24,10 @@ export const ItemCount = styled.span`
   right: -10px;
   background-color:var(--color-color-primary);
   color: white;
-  font-size: 12px;
-  width: 20px;
-  height: 24px;
-  border-radius: 7px;
+  font-size: 1.2rem;
+  width: 2rem;
+  height: 2.4rem;
+  border-radius: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
