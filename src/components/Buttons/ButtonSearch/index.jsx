@@ -1,8 +1,8 @@
-import { StyledSearchIcon, StyledButtonSearch } from "./styles";
+import { StyledSearchIcon, StyledButtonSearch } from './styles';
 
 export const ButtonSearch = () => {
     return (
-        <StyledButtonSearch type="submit">
+        <StyledButtonSearch type='submit'>
             <StyledSearchIcon />
         </StyledButtonSearch>
     )

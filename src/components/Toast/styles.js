@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ToastContainer = styled.div`
   position: fixed;
@@ -16,7 +16,8 @@ export const ToastContainer = styled.div`
   justify-content: center;
   text-align: center;
 
-  background-color: ${props => props.color || '#e60000'}; // Define a cor padrão
+  background-color: ${(props) =>
+    props.color || "#e60000"};
   animation: fadeInOut 1s ease-in-out;
 
   &.toast__fadeOut {
@@ -59,7 +60,5 @@ export const ToastContainer = styled.div`
     100% {
       opacity: 0;
     }
-  
-
-}
+  }
 `;

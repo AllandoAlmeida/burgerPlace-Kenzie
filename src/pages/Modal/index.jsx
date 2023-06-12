@@ -31,7 +31,11 @@ export const Modal = ({ purchaseList, setModalOpen, setPurchaseList, handleShowT
                 </header>
             </div>
             <div>
-                <ShoppingSection purchaseList={purchaseList} setPurchaseList={setPurchaseList} handleShowToast={handleShowToast} />
+                <ShoppingSection
+                    purchaseList={purchaseList}
+                    setPurchaseList={setPurchaseList}
+                    handleShowToast={handleShowToast}
+                />
             </div>
 
         </ModalSection>

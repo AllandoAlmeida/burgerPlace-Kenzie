@@ -1,18 +1,16 @@
-import { BsCart3 } from 'react-icons/bs';
-import styled from 'styled-components';
+import { BsCart3 } from "react-icons/bs";
+import styled from "styled-components";
 
 export const ButtonWrapper = styled.div`
   position: relative;
   display: inline-block;
 
-  button{
+  button {
     border: none;
   }
-
 `;
 
 export const StyledCartIcon = styled(BsCart3)`
-  
   background-color: var(--color-white);
   font-size: 2.4rem;
   border: var(--color-white);
@@ -20,9 +18,9 @@ export const StyledCartIcon = styled(BsCart3)`
 
 export const ItemCount = styled.span`
   position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color:var(--color-color-primary);
+  top: -1.5rem;
+  right: -1rem;
+  background-color: var(--color-color-primary);
   color: white;
   font-size: 1.2rem;
   width: 2rem;

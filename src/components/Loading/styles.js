@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledDiv = styled.div`
   width: 100%;
   max-width: 40%;
-  margin: 15px auto;
+  margin: 1.5rem auto;
 
   font-family: "Roboto Condensed", sans-serif;
   box-sizing: border-box;
@@ -16,9 +16,9 @@ export const StyledDiv = styled.div`
     width: 40%;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: clamp(2px 100% 250%);
+    font-size: clamp(3.2px 100% 250%);
     background: linear-gradient(180deg, #222 0, #444 100%);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.3);
   }
   .loader::after {
     content: "";
@@ -27,14 +27,14 @@ export const StyledDiv = styled.div`
   }
   span {
     float: left;
-    height: 100px;
-    line-height: 120px;
+    height: 6.25rem;
+    line-height: 7.5rem;
     width: 5%;
   }
 
   .loader > span {
-    border-left: 1px solid #444;
-    border-right: 1px solid #222;
+    border-left: .0625rem solid #444;
+    border-right: .0625rem solid #222;
   }
 
   .covers {
@@ -44,7 +44,7 @@ export const StyledDiv = styled.div`
   }
 
   .covers span {
-    background: linear-gradient(180deg, white 0, #ddd 100%);
+    background: linear-gradient(180deg, var(--color-information) 0, var(--color-grey-100) 100%);
     animation: up 2s infinite;
   }
 
@@ -54,7 +54,7 @@ export const StyledDiv = styled.div`
     }
     16% {
       margin-bottom: 100%;
-      height: 20px;
+      height: 1.25rem;
     }
     50% {
       margin-bottom: 0;

@@ -9,8 +9,15 @@ export const ShoppingSection = ({ purchaseList, setPurchaseList, handleShowToast
     <div>
       {purchaseList.length > 0 ? (
         <>
-          <ShoppingList purchaseList={purchaseList} setPurchaseList={setPurchaseList} handleShowToast={handleShowToast} />
-          <ShoppingCartTotal purchaseList={purchaseList} setPurchaseList={setPurchaseList} />
+          <ShoppingList
+            purchaseList={purchaseList}
+            setPurchaseList={setPurchaseList}
+            handleShowToast={handleShowToast}
+          />
+          <ShoppingCartTotal
+            purchaseList={purchaseList}
+            setPurchaseList={setPurchaseList}
+          />
 
         </>
       ) : (

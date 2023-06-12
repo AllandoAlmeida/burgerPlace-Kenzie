@@ -1,5 +1,4 @@
-
-import {ButtonWrapper, ItemCount, StyledCartIcon } from './styles'
+import { ButtonWrapper, ItemCount, StyledCartIcon } from './styles';
 
 
 export const ButtonCountItens = ({ setModalOpen, purchaseList }) => {
@@ -9,7 +8,7 @@ export const ButtonCountItens = ({ setModalOpen, purchaseList }) => {
   return (
     <ButtonWrapper>
       <button onClick={handleOpenModal}>
-        <StyledCartIcon/>
+        <StyledCartIcon />
       </button>
       <ItemCount>{purchaseList.length}</ItemCount>
     </ButtonWrapper>

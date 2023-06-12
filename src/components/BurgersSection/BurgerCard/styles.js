@@ -5,11 +5,11 @@ export const StylesCard = styled.ul`
   min-width: 25rem;
   height: 34rem;
   margin: 2.5rem 0;
-  border: .20rem solid var(--color-grey-100);
+  border: 0.2rem solid var(--color-grey-100);
   border-radius: 5px;
 
-  :hover{
-    border: .20rem solid var(--color-color-primary)
+  :hover {
+    border: 0.2rem solid var(--color-color-primary);
   }
 
   .contanierImage {

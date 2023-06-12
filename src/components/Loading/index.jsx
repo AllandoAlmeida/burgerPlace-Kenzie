@@ -1,6 +1,6 @@
 import { StyledDiv } from "./styles"
 export const Loading = () => {
-    return(
+    return (
         <StyledDiv className="loader">
             <span>L</span>
             <span>O</span>

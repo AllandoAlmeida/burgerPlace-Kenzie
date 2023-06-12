@@ -7,7 +7,6 @@ export const ContainerList = styled.div`
   overflow: hidden;
   overflow-x: scroll;
 
-
   @media screen and (min-width: 48rem) {
     display: flex;
     flex-direction: row;
@@ -15,7 +14,7 @@ export const ContainerList = styled.div`
     gap: 4%;
     width: 100%;
     max-width: 83%;
-    margin: 2rem auto .9375rem;
+    margin: 2rem auto 0.9375rem;
     overflow: hidden;
   }
 `;

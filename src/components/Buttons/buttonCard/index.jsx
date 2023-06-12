@@ -1,10 +1,10 @@
-import { ButtonAddCard } from "./styles";
+import { ButtonAddCard } from './styles';
 
 export const ButtonAddCar = ({ burger, shoppingList }) => {
 
   return (
     <>
-      <ButtonAddCard type="button" onClick={shoppingList} >
+      <ButtonAddCard type='button' onClick={shoppingList} >
         Adicionar
       </ButtonAddCard>
     </>

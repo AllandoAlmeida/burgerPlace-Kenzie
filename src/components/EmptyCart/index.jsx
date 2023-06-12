@@ -1,7 +1,7 @@
-import { StyledEmptyCart } from "./styles"
+import { StyledEmptyCart } from './styles'
 
 export const EmptyCart = () => {
-    return(
+    return (
         <StyledEmptyCart>
             <h1>Seu carrinho esta vazio...</h1>
         </StyledEmptyCart>

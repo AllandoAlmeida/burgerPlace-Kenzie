@@ -17,14 +17,16 @@ export const StyledDivImage = styled.div`
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  margin: 0 15px;
+  margin: 2.5rem 1.5rem 0;
+  height: max-content;
+
   @media screen and (min-width: 1024px) {
-    max-width: 65%
+    max-width: 65%;
   }
 
   img {
-    width: 160px;
-    height: 40px;
+    width: 16rem;
+    height: 4rem;
   }
 `;
 
@@ -33,8 +35,9 @@ export const StyledDivInput = styled.div`
   width: 100%;
   align-items: center;
   justify-content: flex-end;
-  @media screen and (min-width: 1024px) {
-    max-width: 365px;
+  height: max-content;
+  @media screen and (min-width: 10.24rem) {
+    max-width: 36.5rem;
   }
 
   form {
@@ -42,63 +45,58 @@ export const StyledDivInput = styled.div`
     width: 100%;
     justify-content: flex-end;
     @media screen and (min-width: 1024px) {
-    max-width: 365px;
-  }
-    
-
-  p {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    height: 60px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: var(--color-white);
-    :hover {
-      border: 2px solid var(--color-grey-600);
+      max-width: 36.5rem;
     }
 
-   
-  }
-
-  input {
-    width: 100%;
-    height: 50px;
-    margin: 10px;
-    border: none;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    @media screen and (min-width: 1024px) {
-      max-width: 365px;
-  }
-
-    :hover {
+    p {
+      display: flex;
+      align-items: center;
       width: 100%;
-      height: 19px;
+      padding: 1rem;
+      margin: 1rem 0;
+      height: 60px;
+      border: 0.2rem solid #e0e0e0;
+      border-radius: 0.8rem;
+      background-color: var(--color-white);
+      :hover {
+        border: 0.2rem solid var(--color-grey-600);
+      }
+    }
 
+    input {
+      width: 100%;
+      height: 5rem;
+      margin: 1rem;
+      border: none;
       font-family: "Inter";
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      color: #828282;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      @media screen and (min-width: 1024px) {
+        max-width: 36.5rem;
+      }
+
+      :hover {
+        width: 100%;
+        height: 1.9rem;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #828282;
+      }
+    }
+
+    input::placeholder {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #e0e0e0;
     }
   }
-
-  input::placeholder {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #e0e0e0;
-  }
-
-   }
- 
 `;

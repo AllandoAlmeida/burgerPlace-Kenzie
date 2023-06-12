@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledModalList = styled.div`
-${({ cardCount }) =>
+  ${({ cardCount }) =>
     cardCount > 3
       ? `
     height: 31.875rem;
@@ -13,6 +13,6 @@ ${({ cardCount }) =>
     overflow: visible;
     overflow-y: initial;
   `}
-  margin: 23px;
-  min-height: 175px;
+  margin: 2%.3rem;
+  min-height: 17.5rempx;
 `;

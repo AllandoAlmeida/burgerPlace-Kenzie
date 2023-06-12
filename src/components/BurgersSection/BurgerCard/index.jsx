@@ -14,7 +14,7 @@ export const BurgerCard = ({ burger, setPurchaseList, purchaseList }) => {
     let text = '';
 
     if (itemExists) {
-      colorClass = '#e60000'; 
+      colorClass = '#e60000';
       text = 'O produto já foi adicionado ao carrinho.';
     } else {
       setPurchaseList([...purchaseList, burger]);

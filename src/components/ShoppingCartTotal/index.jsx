@@ -23,7 +23,10 @@ export const ShoppingCartTotal = ({ purchaseList, setPurchaseList }) => {
                 <StyledHeadline3 className='title'>Total {" "}</StyledHeadline3>
                 <StyledHeadline3>{displayValue}</StyledHeadline3>
             </StyleCartTotal>
-            <ButtonDeletAll purchaseList={purchaseList} setPurchaseList={setPurchaseList} />
+            <ButtonDeletAll
+                purchaseList={purchaseList}
+                setPurchaseList={setPurchaseList}
+            />
         </>
     )
 }
