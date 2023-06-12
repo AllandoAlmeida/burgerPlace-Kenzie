@@ -11,7 +11,7 @@ export const ContainerList = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4%;
+    gap: 3%;
     width: 100%;
     max-width: 83%;
     margin: 2rem auto 0.9375rem;

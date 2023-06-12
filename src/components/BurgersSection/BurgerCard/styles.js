@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const StylesCard = styled.ul`
-  width: 30rem;
+  flex: 1 0 30rem;
   min-width: 25rem;
   height: 34rem;
   margin: 2.5rem 0;
   border: 0.2rem solid var(--color-grey-100);
   border-radius: 5px;
+  @media screen and (min-width: 1180px) {
+    max-width: 30rem;
+  }
 
   :hover {
     border: 0.2rem solid var(--color-color-primary);

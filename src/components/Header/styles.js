@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   height: max-content;
   margin: 0 auto;
@@ -10,23 +10,31 @@ export const StyledHeader = styled.header`
   padding: 0 5%;
   top: 0;
   background-color: var(--color-img);
+  @media screen and (min-width: 76.8rem) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1.5rem;
+  }
 `;
 
 export const StyledDivImage = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 1.5rem;
   align-items: center;
-  margin: 2.5rem 1.5rem 0;
+  margin: 2.5rem 0 0;
   height: max-content;
 
-  @media screen and (min-width: 1024px) {
-    max-width: 65%;
+  @media screen and (min-width: 76.8rem) {
+    
   }
 
   img {
     width: 16rem;
     height: 4rem;
+    margin: 0;
   }
 `;
 
@@ -36,17 +44,16 @@ export const StyledDivInput = styled.div`
   align-items: center;
   justify-content: flex-end;
   height: max-content;
-  @media screen and (min-width: 10.24rem) {
-    max-width: 36.5rem;
+  @media screen and (min-width: 76.8rem) {
+    width: 30%;
+    min-width: 365px
   }
 
   form {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    @media screen and (min-width: 1024px) {
-      max-width: 36.5rem;
-    }
+    
 
     p {
       display: flex;
@@ -61,6 +68,7 @@ export const StyledDivInput = styled.div`
       :hover {
         border: 0.2rem solid var(--color-grey-600);
       }
+      
     }
 
     input {
@@ -73,9 +81,7 @@ export const StyledDivInput = styled.div`
       font-weight: 400;
       font-size: 1.6rem;
       line-height: 1.9rem;
-      @media screen and (min-width: 1024px) {
-        max-width: 36.5rem;
-      }
+     
 
       :hover {
         width: 100%;

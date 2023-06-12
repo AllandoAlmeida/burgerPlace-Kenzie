@@ -9,7 +9,7 @@ export const StyledModalList = styled.div`
     overflow-y: scroll;
   `
       : `
-    height: auto;
+    min-height: 30rem;
     overflow: visible;
     overflow-y: initial;
   `}
